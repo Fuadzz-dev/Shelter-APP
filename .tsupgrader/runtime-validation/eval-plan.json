@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "project": {
+        "name": "d:/APP",
+        "language": "typescript",
+        "projectType": "nodejs",
+        "sourceRoot": "d:/APP"
+    },
+    "assertions": [
+        {
+            "name": "npm run types:check",
+            "command": "npm run types:check",
+            "cwd": "d:/APP",
+            "expectExitCode": 0,
+            "expected": "0"
+        },
+        {
+            "name": "npm run build",
+            "command": "npm run build",
+            "cwd": "d:/APP",
+            "expectExitCode": 0,
+            "expected": "0"
+        }
+    ]
+}

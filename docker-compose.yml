@@ -10,8 +10,8 @@ services:
     working_dir: /var/www
     volumes:
       - ./:/var/www
-      - shelter_vendor:/var/www/vendor # Tambahan untuk bypass I/O Windows
-      - ./docker/php/upload.ini:/usr/local/etc/php/conf.d/upload.ini # Custom PHP upload limits
+      - shelter_vendor:/var/www/vendor
+      - ./docker/php/upload.ini:/usr/local/etc/php/conf.d/upload.ini
     networks:
       - shelter-network
 
@@ -50,7 +50,7 @@ services:
     container_name: shelter_phpmyadmin
     restart: unless-stopped
     ports:
-      - "8081:80"
+      - '8081:80'
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: root
@@ -65,4 +65,4 @@ networks:
 
 volumes:
   shelter_db_data:
-  shelter_vendor: # Daftarkan volume baru di sini
+  shelter_vendor:

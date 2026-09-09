@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link rel="icon" type="image/png" href="{{ asset('apple-touch-icon.png') }}" />
+        <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}" />
         <title>SHELTER - Verifikasi Keabsahan Dokumen</title>
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <link

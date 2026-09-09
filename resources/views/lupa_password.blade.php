@@ -4,6 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <link rel="icon" type="image/png" href="{{ asset('apple-touch-icon.png') }}" />
+        <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}" />
         <title>SHELTER System - Pemulihan Kata Sandi</title>
 
         <!-- Fonts & Icons -->
